@@ -63,5 +63,24 @@ public class Maximum <E extends Comparable> {
 	private static <E> void toPrint(E value1, E value2, E value3, E max) {
 		System.out.println("Max of "+value1+" , "+value2+" , "+value3+" is: "+max);
 	}
-}
+	//more than three parameters
 
+
+	public static <E extends Comparable> E testMaximum(E... values) {
+		E max = values[0];
+		for( E element : values){
+			if(element.compareTo(max)>0){
+				max = element;
+			}
+		}
+		toPrint(max,values);
+		return max;
+	}
+
+	private static <E> void toPrint(E max, E... values) {
+		for(E element : values){
+			Log.info("\t"+element);
+		}
+		Log.info(" :max is: "+max);
+	}
+}
