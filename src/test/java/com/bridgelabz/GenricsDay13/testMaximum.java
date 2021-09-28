@@ -56,4 +56,39 @@ public class testMaximum{
 		String actualValue = Maximum.testMaximum("ABC","def","xyz");
 		Assert.assertEquals("xyz",actualValue);
 	}
+	//more than three parameter
+	@Test
+	public void threeValuesWhenGetMaximumReturnCorrectValue1() {
+		int actualResult = Maximum.testMaximum(12, 4, 6);
+		Assert.assertEquals(12, actualResult);
+	}
+	@Test
+	public void fiveValuesWhenGetMaximumReturnCorrectValue() {
+		int actualResult = Maximum.testMaximum(360,480,720,1040,2080);
+		Assert.assertEquals(2080, actualResult);
+	}
+
+	@Test
+	public void floatGivenWhenGetMaximumReturnCorrectValue() {
+		float actualResult = Maximum.testMaximum(15.8f, 16.7f, 16.0f);
+		Assert.assertEquals(16.7f, actualResult ,0);
+	}
+
+
+	@Test
+	public void fourfloatGivenWhenGetMaximumReturnCorrectValue() {
+		float actualResult = Maximum.testMaximum(34.0f, 520.0f, 68.0f, 10.20f,30.80f);
+		Assert.assertEquals(520.0f, actualResult,0);
+	}
+	@Test
+	public void strinGivenMaximumReturnValue() {
+		String actualResult = Maximum.testMaximum("srikanth", "reddy", "yaddala");
+		Assert.assertEquals("yaddala", actualResult);
+	}
+
+	@Test
+	public void fourStrinGivenMaximumReturnValue() {
+		String actualResult = Maximum.testMaximum("srikanth", "reddy", "yaddala", "cricket","dgfdg");
+		Assert.assertEquals("yaddala", actualResult);
+	}
 }
