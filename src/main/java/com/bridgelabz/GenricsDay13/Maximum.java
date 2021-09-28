@@ -61,7 +61,7 @@ public class Maximum <E extends Comparable> {
 		}
 		Log.info(" :max is: "+max);
 	}
-	//find maximum using genrics
+	//find maximum using genrics into one
 	public Maximum(E value1, E value2, E value3) {
 		this.value1 = value1;
 		this.value2 = value2;
