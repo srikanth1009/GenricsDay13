@@ -74,7 +74,8 @@ public class testMaximum{
 	public void fourStrinGivenMaximumReturnValue() {
 		String actualResult = Maximum.testMaximum("srikanth", "reddy", "yaddala", "cricket","dgfdg");
 		Assert.assertEquals("yaddala", actualResult);
-	}//using genrics merge all into one
+	}
+	//using genrics merge all into one
 	@Test
 	public void intMax() {
 		int actualValue = Maximum.testMaximum(30, 550, 5);
