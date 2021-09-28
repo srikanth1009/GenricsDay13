@@ -26,4 +26,17 @@ public class testMaximum{
 		float actualValue = Maximum.getmaximum1(1000f,545f,746f);
 		Assert.assertEquals(1000,actualValue, 0);
 	}
+
+//maximum value of string
+@Test
+public void stringMax1() {
+    String actualValue = Maximum.getmaximum2("Aa","Bb","Cc");
+    Assert.assertEquals("Cc",actualValue);
+}
+
+@Test
+public void stringMax2() {
+    String actualValue = Maximum.getmaximum2("abc","ABC","def");
+    Assert.assertEquals("def", actualValue);
+}
 }
